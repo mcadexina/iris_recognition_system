@@ -20,8 +20,10 @@ build/
 uploads/*
 !uploads/.gitkeep
 
-# TensorFlow logs
+# TensorFlow logs - except those handled by Git LFS
 events.out.tfevents.*
+# Don't ignore .h5 model files (handled by Git LFS)
+!*.h5
 
 # Environment variables
 .env
